@@ -30,19 +30,13 @@ Notes:
 func SumMultiples(multiples []int, maxValue int) int {
 	sum := 0
 	current := 1
-	divisible := false
 
 	for current < maxValue {
 		for _, multiple := range multiples {
 			if current%multiple == 0 {
-				divisible = true
+				sum += current
 				break
 			}
-
-		}
-		if divisible {
-			sum += current
-			divisible = false
 		}
 		current++
 	}
