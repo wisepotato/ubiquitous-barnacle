@@ -4,7 +4,7 @@ Go vs C++
 
 ## Challenge suites
 
-- Euler
+- [Project Euler](https://projecteuler.net)
 
 ## Instructions for Go projects
 
