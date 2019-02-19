@@ -8,7 +8,22 @@ func main() {
 
 	result := SumMultiples(mult, max)
 
-	fmt.Println(result)
+	fmt.Printf(`
+Challenge 1: Multiples of 3 and 5
+
+Problem: Sum all multiples of 3 and 5 up to 1000
+
+Solution: %d
+
+Approach:
+- Loop through every natural number up to 999
+- Sum those that are divisible by 3 or 5
+
+Notes:
+- The challenge has a trap: multiples of 3 and 5 can overlap, but should be
+  counted only once. Therefore summing all multiples under 1000 is not a
+  good strategy.
+`, result)
 }
 
 // SumMultiples ...
