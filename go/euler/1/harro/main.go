@@ -61,15 +61,12 @@ func SumMultiples(multiples []int, maxValue int) int {
 			sum += multiple * (maxIterations * (1 + maxIterations) / 2) // 5*( sum_i^maxIterations i)
 		}
 	}
-
 	// take out the combinations
 	for _, combination := range combinations {
 		maxIterations = int(math.Floor(float64(maxValue-1) / float64(combination)))
 		if maxIterations != 0 {
 			sum -= combination * (maxIterations * (1 + maxIterations) / 2)
 		}
-
 	}
-
 	return sum
 }
