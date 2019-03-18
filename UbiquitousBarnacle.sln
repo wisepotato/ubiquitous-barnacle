@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28531.58
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Euler", "C++\euler\Euler.vcxproj", "{8BF06DE9-D328-407F-86EF-299268015303}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Euler", "c++\euler\Euler.vcxproj", "{8BF06DE9-D328-407F-86EF-299268015303}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2", "2\2.vcxproj", "{1C4DD250-B0BD-4309-9EA8-8653099E3C4B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,14 @@ Global
 		{8BF06DE9-D328-407F-86EF-299268015303}.Release|x64.Build.0 = Release|x64
 		{8BF06DE9-D328-407F-86EF-299268015303}.Release|x86.ActiveCfg = Release|Win32
 		{8BF06DE9-D328-407F-86EF-299268015303}.Release|x86.Build.0 = Release|Win32
+		{1C4DD250-B0BD-4309-9EA8-8653099E3C4B}.Debug|x64.ActiveCfg = Debug|x64
+		{1C4DD250-B0BD-4309-9EA8-8653099E3C4B}.Debug|x64.Build.0 = Debug|x64
+		{1C4DD250-B0BD-4309-9EA8-8653099E3C4B}.Debug|x86.ActiveCfg = Debug|Win32
+		{1C4DD250-B0BD-4309-9EA8-8653099E3C4B}.Debug|x86.Build.0 = Debug|Win32
+		{1C4DD250-B0BD-4309-9EA8-8653099E3C4B}.Release|x64.ActiveCfg = Release|x64
+		{1C4DD250-B0BD-4309-9EA8-8653099E3C4B}.Release|x64.Build.0 = Release|x64
+		{1C4DD250-B0BD-4309-9EA8-8653099E3C4B}.Release|x86.ActiveCfg = Release|Win32
+		{1C4DD250-B0BD-4309-9EA8-8653099E3C4B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

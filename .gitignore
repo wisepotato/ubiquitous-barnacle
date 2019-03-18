@@ -3,3 +3,8 @@
 .vscode
 c++/euler/*/Debug
 x64/Debug/*
+
+
+*/x64/*
+*/*.vcxproj.*
+*/*.vcxproj
