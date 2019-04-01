@@ -3,27 +3,33 @@
 using namespace std;
 
 // Function for binary_predicate 
-bool compare(int a, int b)
+bool compare(long long a, long long b)
 {
 	return (a == b);
 }
 // get maximum amount of iterations possible < maxValue
-int getMaxIterations(int multiple, int maxValue) {
-	return floor((maxValue - 1) / multiple);
+int getMaxIterations(long long multiple, long long maxValue) {
+	return (long long)((maxValue - 1) / multiple);
 }
-// summate, the easy way! does sum_{i=1}^n i for you!
-int sumAlgebraic(int n) {
-	return (n * (n + 1)) / 2;
+
+/*
+	Summate the easy way, in a hard way, does ∑_{i=1}^n i  for you
+	Uses a bit-shift right to do division, because otherwise
+	we run into precision errors. 
+*/
+long sumAlgebraic(long n) {
+	return (n * (n + 1)) >> 1;
 }
-int main()
-{
-	int sum = 0;
-	list<int> results;
-	list<int> multiples = { 3, 5 };
-	int maxValue = 1000;
-	int maxIterations;
-	for (int multiple : multiples) {
-		for (int multipleNested : multiples) {
+/*
+	Gets the sum of the multiples of a certain maxvalues, where the multiples are 3 and 5
+*/
+long long getSum(long maxValue){
+	long long sum = 0;
+	list<long long> results;
+	list<long long> multiples = { 3, 5 };
+	long long maxIterations;
+	for (long long multiple : multiples) {
+		for (long long multipleNested : multiples) {
 			if (multiple != multipleNested) {
 				results.push_front(multipleNested * multiple);
 			}
@@ -36,6 +42,19 @@ int main()
 		maxIterations = getMaxIterations(result, maxValue);
 		sum -= result * sumAlgebraic(maxIterations);
 	}
-	cout << sum;
+	return sum;
+}
+/*
+ usage of Long here because we need precision.
+*/
+int main()
+{
+    long t;
+    cin >> t;
+    for(int a0 = 0; a0 < t; a0++){
+        long n;
+        cin >> n;
+        cout << getSum(n) << endl;
+    }
 	return 0;
 }
